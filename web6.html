@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialLift Agency</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0D0D0D;
+            color: #F5F5F5;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1A1A1A;
+            color: #FFD700;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            max-width: 80px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFD700;
+            color: #1A1A1A;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: url('file:///Users/sunny/Downloads/premium_photo-1725515712883-02dff3dbe11b.avif') no-repeat center center/cover;
+            color: #FFD700;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0 0 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin: 1rem 0 2rem;
+            font-size: 1.5rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #FFD700;
+            color: #1A1A1A;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #333;
+            color: #FFD700;
+        }
+
+        .services,
+        .contact {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .services h2,
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .service {
+            background-color: #1A1A1A;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+            width: 280px;
+            color: #F5F5F5;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .pricing {
+            padding: 2rem 1rem;
+            text-align: center;
+            background-color: #0D0D0D;
+        }
+
+        .pricing h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .price-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .price-card {
+            background-color: #1A1A1A;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+            width: 300px;
+            text-align: center;
+            color: #F5F5F5;
+        }
+
+        .price-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: #FFD700;
+            margin: 1rem 0;
+        }
+
+        .blog {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .blog h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .blog-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: #1A1A1A;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+            width: 300px;
+            text-align: center;
+            color: #F5F5F5;
+        }
+
+        .blog-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        footer {
+            background-color: #1A1A1A;
+            color: #F5F5F5;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #1A1A1A;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+            background-color: #1A1A1A;
+            color: #F5F5F5;
+        }
+
+        .contact-form button {
+            background-color: #FFD700;
+            color: #1A1A1A;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #333;
+            color: #FFD700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/mnt/data/f82a6211-c74a-471a-9b93-cefe1d501892.JPG" alt="SocialLift Agency Logo">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>Grow Your Brand, Reach Your Audience</h1>
+        <p>Expert Social Media Management for Businesses Worldwide</p>
+        <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Content Creation</h3>
+                <p>Eye-catching posts and visuals tailored to your brand.</p>
+            </div>
+            <div class="service">
+                <h3>Social Media Strategy</h3>
+                <p>Customized plans to meet your business goals.</p>
+            </div>
+            <div class="service">
+                <h3>Analytics & Reporting</h3>
+                <p>Insights to measure success and improve performance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="price-table">
+            <div class="price-card">
+                <h3>Starter</h3>
+                <div class="price">$99/mo<br>(₹8,000/mo)</div>
+                <ul>
+                    <li>Content Creation (10 posts/month)</li>
+                    <li>Basic Analytics</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#contact">Sign Up</a>
+            </div>
+            <div class="price-card">
+                <h3>Professional</h3>
+                <div class="price">$199/mo<br>(₹16,000/mo)</div>
+                <ul>
+                    <li>Content Creation (20 posts/month)</li>
+                    <li>Advanced Analytics</li>
+                    <li>Priority Support</li>
+                </ul>
+                <a href="#contact">Sign Up</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium</h3>
+                <div class="price">$299/mo<br>(₹24,000/mo)</div>
+                <ul>
+                    <li>Content Creation (Unlimited)</li>
+                    <li>Dedicated Account Manager</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#contact">Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <section class="blog" id="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-table">
+            <div class="blog-card">
+                <h3>5 Tips for Social Media Growth</h3>
+                <p>Learn how to grow your brand's social media presence with these simple tips.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Why Analytics Matter</h3>
+                <p>Understand the importance of analytics in shaping your social media strategy.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-card">
+                <h3>Content That Converts</h3>
+                <p>Discover the key elements of creating content that drives engagement.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: info@socialliftagency.com</p>
+        <p>Phone: +91-1234567890</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 SocialLift Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
