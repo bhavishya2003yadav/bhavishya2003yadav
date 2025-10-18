@@ -95,7 +95,9 @@ My goal is to crack **FANG-level companies** and build **impactful digital produ
 ---
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00D4FF&center=true&vCenter=true&width=435&lines=Building+the+future+one+commit+at+a+time+🚀;Code+is+poetry+written+in+logic+💻;Turning+ideas+into+reality+through+code+✨" alt="Typing SVG" />
+  <h3>🚀 Building the future one commit at a time</h3>
+  <h3>💻 Code is poetry written in logic</h3>
+  <h3>✨ Turning ideas into reality through code</h3>
 </div>
 
 ---
