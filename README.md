@@ -171,5 +171,5 @@ My goal is to crack **FANG-level companies** and build **impactful digital produ
 ---
 
 <div align="center">
-  <i>💡 "The best way to predict the future is to create it."</i>
+  <i>💡 "The best way  to predict the future is to create it ."</i>
 </div>
